@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Webáruház</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-danger text-white text-center py-4">
+        <h1>Üdvözöljük a Steel City Pizzas weboldalán!</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="kezdolap.html">Kezdőlap</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToCart()">Kosár</a></li>
+        </ul>
+    </nav>
+    <main class="container mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://admin.kemencespizzeria.hu/media/products/200/200915/small/bolognai.png" alt="Pizza 1" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Pizza Margherita</h2>
+                        <p class="card-text">Ár: 3,000 HUF</p>
+                        <div class="text-center">
+                        <button class="btn btn-danger" onclick="addToCart('Pizza Margherita', 3000)">Rendelés</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://admin.kemencespizzeria.hu/media/products/200/200865/small/hawai.png" alt="Hawaii pizza" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Hawaii pizza</h2>
+                        <p class="card-text">Ár: 3,000 HUF</p>
+                        <div class="text-center" >
+                        <button class="btn btn-danger" onclick="addToCart('Hawaii pizza', 3000)">Rendelés</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://admin.kemencespizzeria.hu/media/products/200/200847/small/sajtos.png" alt="Sajtos pizza" class="card-img-top">
+        <div class="card-body">
+            <h2 class="card-title">Sajtos pizza</h2>
+            <p class="card-text">Ár: 2,190 HUF</p>
+            <div class="text-center" >
+            <button class="btn btn-danger" onclick="addToCart('Sajtos pizza', 2190)">Rendelés</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://admin.kemencespizzeria.hu/media/products/200/200912/small/magyaros.png" alt="Magyaros pizza" class="card-img-top">
+        <div class="card-body">
+            <h2 class="card-title">Magyaros pizza</h2>
+            <p class="card-text">Ár: 2,990 HUF</p>
+            <div class="text-center" >
+            <button class="btn btn-danger" onclick="addToCart('Magyaros pizza', 2990)">Rendelés</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://admin.kemencespizzeria.hu/media/products/201/201444/large/bolognai.png" alt="Bolognai pizza" class="card-img-top">
+        <div class="card-body">
+            <h2 class= "card-title"> Bolognai pizza</h2>
+            <p class="card-text">Ár: 3,200 HUF</p>
+            <div class="text-center" >
+            <button class="btn btn-danger" onclick="addToCart('Bolognai pizza', 3200)">Rendelés</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://admin.kemencespizzeria.hu/media/products/200/200883/small/szalamis.png" alt="Szalámis pizza" class="card-img-top">
+        <div class="card-body">
+            <h2 class="card-title">Szalámis pizza</h2>
+            <p class="card-text">Ár: 2,990 HUF</p>
+            <div class="text-center" >
+            <button class="btn btn-danger" onclick="addToCart('Szalámis pizza', 2990)">Rendelés</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://admin.kemencespizzeria.hu/media/products/211/211584/small/gyros.png" alt="Gyros pizza" class="card-img-top">
+        <div class="card-body">
+            <h2 class="card-title">Gyros pizza</h2>
+            <p class="card-text">Ár: 2,990 HUF</p>
+            <div class="text-center" >
+            <button class="btn btn-danger" onclick="addToCart('Gyros pizza', 2990)">Rendelés</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://admin.kemencespizzeria.hu/media/products/200/200940/small/husimado.png" alt="Húsimádó pizza" class="card-img-top">
+        <div class="card-body">
+            <h2 class="card-title">Húsimádó pizza</h2>
+            <p class="card-text">Ár: 3,200 HUF</p>
+            <div class="text-center" >
+            <button class="btn btn-danger" onclick="addToCart('Húsimádó pizza', 3200)">Rendelés</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://admin.kemencespizzeria.hu/media/products/200/200963/small/buldozer.png" alt="Buldózer pizza" class="card-img-top">
+        <div class="card-body">
+            <h2 class="card-title">Buldózer pizza</h2>
+            <p class="card-text">Ár: 2,800 HUF</p>
+            <div class="text-center" >
+            <button class="btn btn-danger" onclick="addToCart('Buldózer pizza', 2800)">Rendelés</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ </div>
+    </main>
+    <div id="cart" class="cart container mt-4">
+        <h2>Kosár</h2>
+    </div>
+    <div id="total-price" class="cart container mt-4">
+        Végösszeg: 0 HUF
+    </div>
+    <script>
+        const cart = []; 
+        let totalPrice = 0; 
+        const cartContainer = document.getElementById("cart");
+        const totalPriceElement = document.getElementById("total-price");
+
+        function scrollToCart() {
+            const cartElement = document.getElementById("cart");
+            cartElement.scrollIntoView({ behavior: "smooth" });
+        }
+
+        const usdToHufExchangeRate = 364; 
+
+        function addToCart(pizzaName, priceInHuf) {
+            cart.push({ name: pizzaName, price: priceInHuf });
+            totalPrice += priceInHuf; 
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            cartContainer.innerHTML = "<h2>Kosár</h2>";
+
+            cart.forEach((item) => {
+                const cartItem = document.createElement("div");
+                cartItem.innerHTML = `${item.name} - ${item.price} HUF`;
+                cartContainer.appendChild(cartItem);
+            });
+
+            totalPriceElement.innerHTML = `Végösszeg: ${totalPrice.toFixed(2)} HUF`;
+        }
+    </script>
+    <footer class="bg-dark text-white text-center py-2 mt-4">
+        <p>&copy; 2023 Steel City Pizzas</p>
+    </footer>
+</body>
+</html>
